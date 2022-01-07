@@ -8,4 +8,4 @@ A sample ASP.NET core API project that demonstrates Insight.Database ORM library
 
 # Example repository
 
-![repository](https://github.com/m0hamdan/InsightDB.Demo/tree/master/InsightDB.Demo/Screenshots)
+![repository](https://github.com/m0hamdan/InsightDB.Demo/blob/master/InsightDB.Demo/Screenshots/Repository.PNG)
