@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Migrations\Scripts\M_202201012332284599_Create_StoredProc_GetProduct_Down.sql" />
+    <None Remove="Migrations\Scripts\M_202201012332284599_Create_StoredProc_GetProduct_Up.sql" />
+    <None Remove="Migrations\Scripts\M_202201012333075307_Create_StoredProc_GetProductsByCategory_Up.sql" />
+    <None Remove="Migrations\Scripts\M_202201012334113252_Create_StoredProc_GetCategories_Up.sql" />
+    <None Remove="Migrations\Scripts\M_202201013334113234_Create_StoredProc_GetTopProductsByCategory_Up.sql" />
+    <None Remove="Migrations\Scripts\M_202201013334123331_Create_StoredProc_GetProductsPaged_Up.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Scripts\M_202201012332284599_Create_StoredProc_GetProduct_Down.sql" />
+    <EmbeddedResource Include="Migrations\Scripts\M_202201013334123331_Create_StoredProc_GetProductsPaged_Up.sql" />
+    <EmbeddedResource Include="Migrations\Scripts\M_202201013334113234_Create_StoredProc_GetTopProductsByCategory_Up.sql" />
+    <EmbeddedResource Include="Migrations\Scripts\M_202201012334113252_Create_StoredProc_GetCategories_Up.sql" />
+    <EmbeddedResource Include="Migrations\Scripts\M_202201012333075307_Create_StoredProc_GetProductsByCategory_Up.sql" />
+    <EmbeddedResource Include="Migrations\Scripts\M_202201012332284599_Create_StoredProc_GetProduct_Up.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentMigrator" Version="3.3.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.3.1" />
+    <PackageReference Include="FluentMigrator.Runner.SqlServer" Version="3.3.1" />
+    <PackageReference Include="Insight.Database" Version="6.3.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Responses\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
